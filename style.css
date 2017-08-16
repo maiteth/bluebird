@@ -1,4 +1,4 @@
-*
+﻿*
 {
 	margin:0;
 	padding:0;
@@ -1076,3 +1076,34 @@ table, td
 }
 
 /* CSS Page de profil (fin) */
+
+/* CSS Page messages (début) */
+
+.chat .message
+{
+	width:100%;
+	height:600px;
+	padding:10px;
+	overflow-y:scroll;
+}
+
+.chat .entree
+{
+	width:100%;
+	height:100px;
+	padding:10px;
+	margin-top:5px;
+}
+
+.pseudo
+{
+	text-decoration:none;
+}
+
+.chat
+{
+	border:2px solid #1373cf;
+	border-radius:10px;
+}
+
+/* CSS Page messages (fin) */

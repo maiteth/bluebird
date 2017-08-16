@@ -1,18 +1,31 @@
+<?php
+session_start();
+if(isset($_GET['id_membre']))
+{
+	$_SESSION['id_membre']=(int)$_GET['id_membre'];
+}
+else
+{
+	$_SESSION['id_membre'] = 0;
+}
+
+?>
 <!DOCTYPE html>
 <!-- <html> -->
-
 <head>
 
 	<meta charset=utf-8>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel=icon href="images/logo_bluebird.png">
-	<script src="app.js" type=text/javascript></script>
+	<link rel=icon href="../logo_bluebird.png">
 	<title>BlueBird</title>
-	<script src="app.js" type=text/javascript></script>
 
-</head>
+	<script src="app.js" type=text/javascript>
+	</script>
 
-<body>
+	</head>
+
+	<body>
 
 	<header id=bandeau>
 		<section>
@@ -27,8 +40,7 @@
 				</a>
 			</div>
 		</section>
-		<section>
-			<!-- Barre recherche non responsive ! -->
+		<section><!-- Barre recherche non responsive ! -->
 			<div>
 				<input type=text id=search placeholder=Rechercher...>
 			</div>
@@ -39,8 +51,7 @@
 					<a href=#>
 						<img alt=notifs src=images/notifs.png>
 					</a>
-					<div id=nbnotifs>2
-						<!--Nombre récupéré dans la BDD-->
+					<div id=nbnotifs>2<!--Nombre récupéré dans la BDD-->
 					</div>
 				</div>
 			</div>
@@ -49,14 +60,12 @@
 					<a href=messages.html>
 						<img alt=messages src=images/messages.png>
 					</a>
-					<div id=nbmessages>5
-						<!--Nombre récupéré dans la BDD-->
+					<div id=nbmessages>5<!--Nombre récupéré dans la BDD-->
 					</div>
 				</div>
 			</div>
 			<div id=pp>
-				<a href=profil.html>
-					<!--nom de page généré par le site-->
+				<a href=profil.html><!--nom de page généré par le site-->
 					<img alt=pp-isidore-monnet src=images/pp-isidore-monnet.png>
 				</a>
 			</div>
@@ -70,7 +79,7 @@
 				</a>
 			</div>
 			<div id=fleche-home onclick='afficher()'>
-				<a href=#>
+				<a href=# >
 					<img alt=fleche-bas src=images/fleche-bas.png>
 				</a>
 			</div>
@@ -79,14 +88,14 @@
 					<li>
 						<a href=#>Paramètres
 						</a>
-						<li>
-							<a>Déconnexion
+					<li>
+						<a>Déconnexion
 						</a>
-							<li>
-								<a href=contact_BlueBird.html>Aide
+					<li>
+						<a href=contact_bluebird.html>Aide
 						</a>
-								<li>
-									<a href=#>Passer à la version Pro
+					<li>
+						<a href=#>Passer à la version Pro
 						</a>
 				</ul>
 			</div>
@@ -204,115 +213,19 @@
 						</div>
 					</div>
 				</div>
-
+				
 			</div>
 		</aside>
-
+		
 		<section id=pageMessages>
-			<div id=entete>
-				<div class=aligne>
-					<h1>Issa Monnet, Tata Suzanne
-					</h1>
-					<h2>Il y a 12 minutes
-					</h2>
+				<div class="chat">
+					<div class="message"></div>
+						<textarea class="entree" placeholder="Veuillz saisir votre texte ici(Shift+Entrée pour un saut de ligne)"></textarea>
 				</div>
-				<div id=participants>
-					<a href=profil.html>
-						<!--nom de page généré par le site-->
-						<img alt=pp-issa-monnet src=images/pp-issa-monnet.png class=miniatures>
-					</a>
-					<a href=profil.html>
-						<!--nom de page généré par le site-->
-						<img alt=pp-tata-suzanne src=images/pp-tata-suzanne.png class=miniatures>
-					</a>
-					<a href=#>
-						<!--ouvre la liste d'amis-->
-						<img alt=plus src=images/plus.png id=iconePlus>
-					</a>
-				</div>
-			</div>
-			<div id=activeMessage>
-				<div class=aligne>
-					<a href=profil.html>
-						<!--nom de page généré par le site-->
-						<img alt=pp-issa-monnet src=images/pp-issa-monnet.png class=miniatures>
-					</a>
-					<p class=altMessage>Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste.
-					</p>
-				</div>
-				<div class=aligne>
-					<a href=profil.html>
-						<!--nom de page généré par le site-->
-						<img alt=pp-tata-suzanne src=images/pp-tata-suzanne.png class=miniatures>
-					</a>
-					<p class=altMessage>Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto
-						veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae
-						sunt per Catonem, nunc repetetur ordo gestorum.
-					</p>
-				</div>
-				<div class=aligne>
-					<p class=selfMessage>Harum trium sententiarum nulli prorsus assentior. Nec enim illa prima vera est, ut, quem ad modum in se quisque sit,
-						sic in amicum sit animatus.
-					</p>
-					<a href="profil.html">
-						<!--nom de page généré par le site-->
-						<img alt=pp-isidore-monnet src=images/pp-isidore-monnet.png class=miniatures>
-					</a>
-				</div>
-				<div class=aligne>
-					<a href="profil.html">
-						<!--nom de page généré par le site-->
-						<img alt=pp-tata-suzanne src=images/pp-tata-suzanne.png class=miniatures>
-					</a>
-					<p class=altMessage>Quam multa enim, quae nostra causa numquam faceremus, facimus causa amicorum! precari ab indigno, supplicare, tum acerbius
-						in aliquem invehi insectarique vehementius, quae in nostris rebus non satis honeste.
-					</p>
-				</div>
-				<div class=aligne>
-					<a href="profil.html">
-						<!--nom de page généré par le site-->
-						<img alt=pp-issa-monnet src=images/pp-issa-monnet.png class=miniatures>
-					</a>
-					<p class=altMessage>In amicorum fiunt honestissime; multaeque res sunt in quibus de suis commodis viri boni multa detrahunt detrahique patiuntur,
-						ut iis amici potius quam ipsi fruantur.
-					</p>
-				</div>
-				<div class=aligne>
-					<p class=selfMessage>Quam multa enim, quae nostra causa numquam faceremus.
-					</p>
-					<a href="profil.html">
-						<!--nom de page généré par le site-->
-						<img alt=pp-isidore-monnet src=images/pp-isidore-monnet.png class=miniatures>
-					</a>
-				</div>
-				<div class=aligne>
-					<a href="profil.html">
-						<!--nom de page généré par le site-->
-						<img alt=pp-tata-suzanne src=images/pp-tata-suzanne.png class=miniatures>
-					</a>
-					<p class=altMessage>Quam multa enim, quae nostra causa numquam faceremus, facimus causa amicorum! precari ab indigno, supplicare, tum acerbius
-						in aliquem invehi insectarique vehementius, quae in nostris rebus non satis honeste.
-					</p>
-				</div>
-				<div class=aligne>
-					<a href="profil.html">
-						<!--nom de page généré par le site-->
-						<img alt=pp-issa-monnet src=images/pp-issa-monnet.png class=miniatures>
-					</a>
-					<p class=altMessage>In amicorum fiunt honestissime; multaeque res sunt in quibus de suis commodis viri boni multa detrahunt detrahique patiuntur,
-						ut iis amici potius quam ipsi fruantur.
-					</p>
-				</div>
-			</div>
-			<div id=messageBox class=aligne>
-				<textarea rows="2" id=nouveauMessage placeholder="Saisissez votre message">
-				</textarea>
-				<div>
-					<img alt=publier src=images/publier.png>
-				</div>
-			</div>
+				<script src="js/jquery-3.2.0.min.js"></script>
+				<script src="js/chat.js"></script>
 		</section>
-
+		
 		<aside id=Publicite>
 			<div id=encartPub>
 				<img alt=image-pub src="images/image-pub.png" id="imagePub">
@@ -322,9 +235,8 @@
 				</p>
 			</div>
 		</aside>
-
+		
 	</div>
-
-</body>
-
+		
+	</body>
 </html>

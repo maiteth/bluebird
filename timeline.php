@@ -5,24 +5,25 @@
 	<meta charset="utf-8">
 	<title>BlueBird</title>
 	<link rel=stylesheet href="style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/app.js"></script>
+	<script src="js/jqFancyTransitions.1.8.min.js"></script>
 	<link rel=icon href="images/logo_bluebird.png">
-	<script src="js/app.js" type=text/javascript>
-	</script>
+	<?php include('bdd.php') ?>
 </head>
 
 <body>
-
 	<header id=bandeau>
 		<section>
 			<div id=logo>
-				<a href=timeline.html>
-						<img alt=logo_home src=images/logo_home.png>
-					</a>
+				<a href=login.php>
+					<img alt=logo_home src=images/logo_home.png>
+				</a>
 			</div>
 			<div id=logo_home>
-				<a href=timeline.html>
-						<img alt=logo_bluebird_texte src=images/logo_bluebird_texte.png>
-					</a>
+				<a href=timeline.php>
+					<img alt=logo_bluebird_texte src=images/logo_bluebird_texte.png>
+				</a>
 			</div>
 		</section>
 		<section>
@@ -35,8 +36,8 @@
 			<div id=notifsbox>
 				<div id=notifs>
 					<a href="#">
-							<img alt=notifs src=images/notifs.png>
-						</a>
+						<img alt=notifs src=images/notifs.png>
+					</a>
 					<div id=nbnotifs>2
 						<!--Nombre récupéré dans la BDD-->
 					</div>
@@ -45,8 +46,8 @@
 			<div id=messagesbox>
 				<div id=messages>
 					<a href=messages.html>
-							<img alt=messages src=images/messages.png>
-						</a>
+						<img alt=messages src=images/messages.png>
+					</a>
 					<div id=nbmessages>5
 						<!--Nombre récupéré dans la BDD-->
 					</div>
@@ -59,33 +60,28 @@
 				</a>
 			</div>
 			<div id=nom-profil>
-				<a href=profil.html>Isidore<!--nom de page généré par le site-->
-					</a>
+				<a href=profil.html>Isidore<!--nom de page généré par le site--></a>
 			</div>
 			<div id=param>
 				<a href="#">
-						<img alt=parametres src=images/parametres.png>
-					</a>
+					<img alt=parametres src=images/parametres.png>
+				</a>
 			</div>
-			<div id=fleche-home onclick='afficher()'>
+			<div id=fleche-home>
 				<a href="#">
-						<img alt=fleche-bas src=images/fleche-bas.png>
-					</a>
+					<img alt=fleche-bas id=arrow_down src=images/fleche-bas.png>
+				</a>
 			</div>
 			<div id=menuDeroulant>
 				<ul>
 					<li>
-						<a href="#">Paramètres
-							</a>
-						<li>
-							<a>Déconnexion
-							</a>
-							<li>
-								<a href=contact_BlueBird.html>Aide
-							</a>
-								<li>
-									<a href="#">Passer à la version Pro
-							</a>
+						<a href="#">Paramètres</a>
+					<li>
+						<a href="login.php?logout">Déconnexion</a>
+					<li>
+						<a href=contact_BlueBird.html>Aide</a>
+					<li>
+						<a href="#">Passer à la version Pro</a>
 				</ul>
 			</div>
 		</section>
@@ -218,10 +214,10 @@
 			<!-- bloc pour statut et boutons media -->
 			<div class=blocpublication>
 				<!-- bloc pour statut uniquement -->
-				<div id=blocexpression>
+				<form id=blocexpression method=post action=publier.php>
 					<img alt=pp-isidore-monnet class=pptl src="images/pp-isidore-monnet.png">
 					<p>
-						<textarea rows=3 id=exprimezvous placeholder="Exprimez-vous"></textarea>
+						<textarea rows=3 id=exprimezvous name=exprimezvous placeholder="Exprimez-vous"></textarea>
 					</p>
 				</div>
 				<!-- boutons medias -->
@@ -231,78 +227,13 @@
 						<img alt=photo id=outilspublication1 src="images/photo.png">
 						<img alt=video class=outilspublication2 src="images/video.png">
 						<!--bouton bluebirder-->
-						<input class=bluebirder type=button value=BlueBirder>
+						<input class=bluebirder type=submit value=BlueBirder>
 					</div>
-				</div>
+				</form>
 			</div>
-
-			<!--structure de publication-->
-			<div class="publicationespace blocpublication">
-				<div class=publicationcontainer>
-					<table>
-						<tr>
-							<!--photo de profil-->
-							<td class=colonne1>
-								<img alt=pp-isidore-monnet class=pptl src="images/pp-isidore-monnet.png">
-							</td>
-							<!--texte de publication-->
-							<td>
-								<p class=nompublication>Nom</p>
-								<p class=heurepublication>Heure</p>
-								<p class=textepublication>
-									Texte de publication<br> Texte de publication<br> Texte de publication<br>
-								</p>
-							</td>
-						</tr>
-					</table>
-					<div class=blocinteractions>
-						<p class=nbpiou>2 Piou</p>
-						<p class=nbcomment>3 Commentaires</p>
-						<p class=nbvues>19 vues</p>
-					</div>
-				</div>
-				<div class=publier>
-					<div class=contentpublier>
-						<!--médias intégrables-->
-						<input class="texteoutilspublication boutonpiou" type=button value=Piou>
-						<input class=texteoutilspublication type=button value=Commenter>
-						<input class="texteoutilspublication boutonpartager" type=button value=Partager>
-					</div>
-				</div>
-			</div>
-
-			<!--structure de publication-->
-			<div class="publicationespace blocpublication">
-				<div class=publicationcontainer>
-					<table>
-						<tr>
-							<!--photo de profil-->
-							<td class=colonne1>
-								<img alt=pp-isidore-monnet class=pptl src="images/pp-isidore-monnet.png">
-							</td>
-							<!--texte de publication-->
-							<td>
-								<p class=nompublication>Nom</p>
-								<p class=heurepublication>Heure</p>
-								<p class=textepublication></p>
-								<iframe class=videotimeline src="https://www.youtube.com/embed/I2xd6r0BGbk" frameborder="0" allowfullscreen></iframe>
-							</td>
-						</tr>
-					</table>
-					<div class=blocinteractions>
-						<p class=nbpiou>2 Piou</p>
-						<p class=nbcomment>3 Commentaires</p>
-						<p class=nbvues>19 vues</p>
-					</div>
-				</div>
-				<div class=publier>
-					<div class=contentpublier>
-						<!--médias intégrables-->
-						<input class="texteoutilspublication boutonpiou" type=button value=Piou>
-						<input class=texteoutilspublication type=button value=Commenter>
-						<input class="texteoutilspublication boutonpartager" type=button value=Partager>
-					</div>
-				</div>
+			
+		<div id="filactu">	
+			<?php require('publications.php') ?>
 			</div>
 		</div>
 
@@ -326,7 +257,7 @@
 							<a href="#">
 								<img alt=plus src="images/plus.png" id="imageajouter">
 							</a>
-							<a href="#" class="messageTools">Nouveau message</a>
+							<a href="messages.php" class="messageTools">Nouveau message</a>
 						</div>
 					</div>
 				</div>
@@ -421,5 +352,7 @@
 		</aside>
 	</div>
 </body>
+
+<!--<script src="script.js"></script>-->
 
 </html>

@@ -10,7 +10,8 @@
     catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
     }
-    $content = "SELECT content FROM publication";
+
+// header('Location:index.php');
 ?>
 <!--<<
         ? php
