@@ -1,1109 +1,1054 @@
-﻿*
-{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
+﻿* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body
-{
-	background:#f4f9ff;
+body {
+	background: #f4f9ff;
 }
 
-a:link, a:visited, a:hover, a:active
-{
-	color:#1473d1;
-	text-decoration:none;
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #1473d1;
+	text-decoration: none;
 }
 
-@font-face
-{
-    font-family:SofiaProLight;
-    src:url(fonts/sofia/sofiapro-light-webfont.woff);
+@font-face {
+	font-family: SofiaProLight;
+	src: url(fonts/sofia/sofiapro-light-webfont.woff);
 }
 
-html
-{
-	font-family:SofiaProLight;
+html {
+	font-family: SofiaProLight;
 }
 
-#wrapper
-{
-	margin-top:55px;
-	display:flex;
-	justify-content:space-around;
+#wrapper {
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-around;
 }
+
 
 /* CSS pour le header (début) */
 
-header
-{
+header {
 	box-shadow: 0px 0px 5px #afb3b6;
-	position:fixed;
-	top:0px;
-	z-index:100;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
 }
 
-#bandeau
-{
-	height:45px;
-	width:100%;
-	background:#e5e6e1;
-	display:flex;
-	vertical-align:middle;
-	justify-content:space-around;
+#bandeau {
+	height: 45px;
+	width: 100%;
+	background: #e5e6e1;
+	display: flex;
+	vertical-align: middle;
+	justify-content: space-around;
 }
 
-header section
-{
-	display:flex;
+header section {
+	display: flex;
 }
 
-#logo img,  #logo_home img, #pp img, #param img
-{
-	height:30px;
-	margin-top:7px;
+#logo img,
+#logo_home img,
+#pp img,
+#param img {
+	height: 30px;
+	margin-top: 7px;
 }
 
-#logo
-{
-	margin-right:15px;
+#logo {
+	margin-right: 15px;
 }
 
-#search
-{
-	width:650px;
-	height:25px;
-	border:0px;
-	margin-top:10px;
-	padding-left:10px;
-	padding-right:10px;
-	border-radius:10px;
-	font-family:SofiaProLight;
+#search {
+	width: 650px;
+	height: 25px;
+	border: 0px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	font-family: SofiaProLight;
 }
 
-#nom-profil
-{
-	height:40px;
-	color:#1473d1;
-	font-weight:bold;
+#nom-profil {
+	height: 40px;
+	color: #1473d1;
+	font-weight: bold;
 }
 
-#notifs img, #messages img
-{
-	height:25px;
+#notifs img,
+#messages img {
+	height: 25px;
 }
 
-#notifs
-{
-	height:35px;
-	width:35px;
-	margin-top:12px;
-	text-align:center;
+#notifs {
+	height: 35px;
+	width: 35px;
+	margin-top: 12px;
+	text-align: center;
 }
 
-#messages 
-{
-	height:35px;
-	width:35px;
-	margin-top:12px;
-	margin-left:15px;
-	text-align:center;
+#messages {
+	height: 35px;
+	width: 35px;
+	margin-top: 12px;
+	margin-left: 15px;
+	text-align: center;
 }
 
-#nbnotifs
-{
-	height:17px;
-	width:17px;
-	background:#fe0002;
-	border-radius:10px;
-	text-align:center;
-	vertical-align:middle;
-	font-size:small;
-	color:white;
-	position:relative;
-	top:-33px;
-	right:-20px;
+#nbnotifs {
+	height: 17px;
+	width: 17px;
+	background: #fe0002;
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: small;
+	color: white;
+	position: relative;
+	top: -33px;
+	right: -20px;
 }
 
-#nbmessages
-{
-	height:17px;
-	width:17px;
-	background:#fe0002;
-	border-radius:10px;
-	text-align:center;
-	vertical-align:middle;
-	font-size:small;
-	color:white;
-	position:relative;
-	top:-33px;
-	right:-20px;
+#nbmessages {
+	height: 17px;
+	width: 17px;
+	background: #fe0002;
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: small;
+	color: white;
+	position: relative;
+	top: -33px;
+	right: -20px;
 }
 
-#pp
-{
-	margin-left:17px;
+#pp {
+	margin-left: 17px;
 }
 
-#nom-profil
-{
-	margin-top:10px;
-	margin-left:10px;
+#nom-profil {
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
-#param
-{
-	margin-left:30px;
+#param {
+	margin-left: 30px;
 }
 
-#fleche-home img
-{
-	height:15px;
-	margin-left:15px;
-	margin-top:15px;
+#fleche-home img {
+	height: 15px;
+	margin-left: 15px;
+	margin-top: 15px;
 }
 
-#menuDeroulant
-{
-	display:none;
-	position:absolute;
-	top:45px;
-	right:40px;
-	background:white;
-	border-radius:10px;
+#menuDeroulant {
+	display: none;
+	position: absolute;
+	top: 45px;
+	right: 40px;
+	background: white;
+	border-radius: 10px;
 	box-shadow: 0px 0px 5px #afb3b6;
 }
 
-#menuDeroulant ul
-{
-	list-style-type:none;
+#menuDeroulant ul {
+	list-style-type: none;
 }
 
-#menuDeroulant li
-{
-	margin:5px;
-	font-size:small;
+#menuDeroulant li {
+	margin: 5px;
+	font-size: small;
 }
+
 
 /* CSS pour le header (fin) */
 
+
 /* CSS pour messages (début) */
 
-#pageMessages
-{
-	width:50%;
-	margin-left:auto;
-	margin-right:auto;
+#pageMessages {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#pageMessages h1
-{
-	font-size:large;
-	font-weight:bold;
-	padding-left:5px;
+#pageMessages h1 {
+	font-size: large;
+	font-weight: bold;
+	padding-left: 5px;
 }
 
-#pageMessages h2
-{
-	font-size:medium;
-	font-weight:normal;
-	padding-right:5px;
+#pageMessages h2 {
+	font-size: medium;
+	font-weight: normal;
+	padding-right: 5px;
 }
 
-.aligne
-{
-	display:flex;
-	justify-content:space-between;
+.aligne {
+	display: flex;
+	justify-content: space-between;
 }
 
-.aligne2
-{
-	display:flex;
-	justify-content:space-around;
+.aligne2 {
+	display: flex;
+	justify-content: space-around;
 }
 
-#activeMessage
-{
-	background:white;
-	width:98%;
-	height:65%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:10px;
-	padding:5px;
-	border-radius:10px;
+#activeMessage {
+	background: white;
+	width: 98%;
+	height: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 10px;
 	box-shadow: 0px 0px 5px #afb3b6;
-	overflow:auto;
+	overflow: auto;
 }
 
-#entete
-{
-	background:white;
-	width:98%;
-	height:12%;
-	margin-left:auto;
-	margin-right:auto;
+#entete {
+	background: white;
+	width: 98%;
+	height: 12%;
+	margin-left: auto;
+	margin-right: auto;
 	/* margin-top:10px; */
-	padding:5px;
-	padding-bottom:0;
-	border-radius:10px;
+	padding: 5px;
+	padding-bottom: 0;
+	border-radius: 10px;
 	box-shadow: 0px 0px 5px #afb3b6;
 }
 
-.miniatures
-{
-	height:35px;
-	width:35px;
-	margin:5px;
+.miniatures {
+	height: 35px;
+	width: 35px;
+	margin: 5px;
 }
 
-#iconePlus
-{
-	height:21px;
-	width:21px;
-	margin:12px;
+#iconePlus {
+	height: 21px;
+	width: 21px;
+	margin: 12px;
 }
 
-.altMessage
-{
+.altMessage {
 	box-shadow: 0px 0px 5px #afb3b6;
-	border-radius:10px;
-	padding:10px;
-	margin:5px;
-	text-align:justify;
-	flex:1; /* modif CH 14h46 */
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	text-align: justify;
+	flex: 1;
+	/* modif CH 14h46 */
 }
 
-.selfMessage
-{
+.selfMessage {
 	box-shadow: 0px 0px 5px #afb3b6;
-	border-radius:10px;
-	padding:10px;
-	margin:5px;
-	text-align:justify;
-	background:#2672b9;
-	color:white;
-	flex:1;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	text-align: justify;
+	background: #2672b9;
+	color: white;
+	flex: 1;
 }
 
-#nouveauMessage
-{
-	background:white;
-	width:98%;
-	height:100%;
-	margin-left:auto;
-	margin-right:auto;
-	margin:5px;
-	margin-top:10px;
-	padding:5px;
-	border-radius:10px;
-	border:0px;
+#nouveauMessage {
+	background: white;
+	width: 98%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 5px;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 0px;
 	box-shadow: 0px 0px 5px #afb3b6;
-	font-family:SofiaProLight;
-	font-size:small;
-	resize:none;
+	font-family: SofiaProLight;
+	font-size: small;
+	resize: none;
 }
 
-#messageBox
-{
-	height:10%;
+#messageBox {
+	height: 10%;
 }
 
-#messageBox img
-{
-	height:35px;
-	width:35px;
-	margin:5px;
-	margin-top:10px;
-	border-radius:10px;
+#messageBox img {
+	height: 35px;
+	width: 35px;
+	margin: 5px;
+	margin-top: 10px;
+	border-radius: 10px;
 }
+
 
 /* CSS pour messages (fin) */
 
+
 /* CSS pour Sidebar Gauche Messages (début) */
 
-#listeMessageGauche
-{
-	width:25%;
-	height:90%;
+#listeMessageGauche {
+	width: 25%;
+	height: 90%;
 	/* position:absolute; à supprimer, modif CH 15h49 */
-	left:0px;
-	padding-left:5px;
-	padding-right:5px;
-	overflow:auto;
+	left: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	overflow: auto;
 }
 
-#listeMessageDroite
-{
-	width:25%;
-	height:90%;
+#listeMessageDroite {
+	width: 25%;
+	height: 90%;
 	/* position:absolute; à supprimer, modif CH 15h49 */
-	right:0px;
-	padding-left:5px;
-	padding-right:5px;
+	right: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
 	/* overflow:auto; */
 }
 
+
 /* boîte de messages */
 
-#encartMessages
-{
-	border-radius:10px;
-	width:100%;
-	height:auto;
-	padding-bottom:7px;
+#encartMessages {
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+	padding-bottom: 7px;
 	box-shadow: 0px 0px 5px #afb3b6;
-	background:white;
+	background: white;
 }
 
-#lignemessages
-{
-	background-color:#E6E6E1;
-	width:100%;
-	padding:5px 10px 5px 10px;
-	border-radius:10px 10px 0px 0px;
+#lignemessages {
+	background-color: #E6E6E1;
+	width: 100%;
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px 10px 0px 0px;
 }
 
-#sidebardroitmessages
-{
-	font-size:14px;
-	position:relative;
-	left:37%;
+#sidebardroitmessages {
+	font-size: 14px;
+	position: relative;
+	left: 37%;
 }
 
-#flechebleu
-{
-	text-align:right;
-	cursor:pointer;
+#flechebleu {
+	text-align: right;
+	cursor: pointer;
 }
 
-#flechebleu img
-{
-	height:15px;
-	width:15px;	
+#flechebleu img {
+	height: 15px;
+	width: 15px;
 }
 
-#outilsMessages
-{
-	padding:5px 10px 5px 10px;
+#outilsMessages {
+	padding: 5px 10px 5px 10px;
 }
 
-.messageTools
-{
-	font-size:medium;	
+.messageTools {
+	font-size: medium;
 }
 
-#imageajouter
-{
-	height:21px;
-	width:21px;
-	margin-right:3px;
+#imageajouter {
+	height: 21px;
+	width: 21px;
+	margin-right: 3px;
 }
 
-.messageListe
-{
-	border-radius:2px;
-	width:96%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:5px;
-	margin-bottom:5px;
+.messageListe {
+	border-radius: 2px;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	box-shadow: 0px 0px 2px #afb3b6;
-	background:white;
+	background: white;
 }
 
-.messagePic
-{
-	margin:5px; /* modif CH 14h54 */
+.messagePic {
+	margin: 5px;
+	/* modif CH 14h54 */
 }
 
-.messageText
-{
-	margin:5px;
-	flex:1; /* modif CH 14h54 */
+.messageText {
+	margin: 5px;
+	flex: 1;
+	/* modif CH 14h54 */
 }
 
-.message2Pics
-{
-	width:50px; /* semble ne pas appliquer cette largeur */
-	height:50px;
-	margin:5px;
+.message2Pics {
+	width: 50px;
+	/* semble ne pas appliquer cette largeur */
+	height: 50px;
+	margin: 5px;
 }
 
-.pic02
-{
-	position:relative;
-	bottom:10px;
-	left:20px;
+.pic02 {
+	position: relative;
+	bottom: 10px;
+	left: 20px;
 }
 
-.message2Pics img
-{
-	width:30px;
-	height:30px;
+.message2Pics img {
+	width: 30px;
+	height: 30px;
 }
 
-.messageSender
-{
-	font-size:medium;
-	font-weight:600;
-	color:#888888;
-	text-align:left;
+.messageSender {
+	font-size: medium;
+	font-weight: 600;
+	color: #888888;
+	text-align: left;
 }
 
-.messageTime
-{
-	font-size:small;
-	font-weight:500;
-	color:#888888;
-	text-align:left;
+.messageTime {
+	font-size: small;
+	font-weight: 500;
+	color: #888888;
+	text-align: left;
 }
 
-.messageContent
-{
-	font-size:small;
-	color:#888888;
-	text-align:justify;
+.messageContent {
+	font-size: small;
+	color: #888888;
+	text-align: justify;
 }
+
 
 /* Sidebar Droit Messages */
 
+
 /* CSS pour Sidebar Droit Messages (début) */
 
-#lignepremiermessage
-{
-	background-color:#F3F9FF;
+#lignepremiermessage {
+	background-color: #F3F9FF;
 }
 
-#imagegroupesissa
-{
-	height:31px;
-	width:31px;
+#imagegroupesissa {
+	height: 31px;
+	width: 31px;
 }
 
-#imagegroupestata
-{
-	height:31px;
-	width:31px;
+#imagegroupestata {
+	height: 31px;
+	width: 31px;
 }
 
-#textegrisclair
-{
-	font-family:Sofia Pro;
-	color:#888888;
-	font-size:12px;
+#textegrisclair {
+	font-family: Sofia Pro;
+	color: #888888;
+	font-size: 12px;
 }
 
-#textegrisfonce
-{
-	font-family:Sofia Pro;
-	color:#444444;
+#textegrisfonce {
+	font-family: Sofia Pro;
+	color: #444444;
 }
+
 
 /* CSS pour Sidebar Droit Messages (fin) */
 
+
 /* CSS pour Sidebar Droit Publicité (début) */
 
-#Publicite
-{
-	width:25%;
+#Publicite {
+	width: 25%;
 	/* position:absolute; à supprimer, modif CH 15h49 */
-	top:55px;
-	right:0px;
-	padding-left:5px;
-	padding-right:5px;
+	top: 55px;
+	right: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
-#imagePub
-{
-	width:100%;
-	border-radius:10px;
+#imagePub {
+	width: 100%;
+	border-radius: 10px;
 }
 
-#encartPub
-{
-	margin-bottom:10px;
-}
-#textePub
-{
-	text-align:center;
+#encartPub {
+	margin-bottom: 10px;
 }
 
-#textePub a
-{
-	font-size:small;
-	color:#888888;
-	text-align:center;
-	text-decoration:underline;
+#textePub {
+	text-align: center;
 }
+
+#textePub a {
+	font-size: small;
+	color: #888888;
+	text-align: center;
+	text-decoration: underline;
+}
+
 
 /* CSS pour Sidebar Droit (fin) */
 
+
 /* CSS pour page fil d'actualité (début) */
 
-#timeline
-{
-	width:50%;
-	height:auto;
-	margin-right:auto;
-	margin-left:auto;
-	padding-left:5px;
-	padding-right:5px;
-	overflow:auto;
+#timeline {
+	width: 50%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	overflow: auto;
 }
 
+
 /* BLOC DE PUBLICATION */
-.blocpublication
-{
-	width:100%;
-	height:auto;
-	border-radius:10px;
+
+.blocpublication {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
 	box-shadow: 0px 0px 5px #afb3b6;
 }
 
-.publicationespace
-{
+.publicationespace {
 	/* margin-top:30; */
 	box-shadow: 0px 0px 5px #afb3b6;
 }
 
-#blocexpression
-{
-	background-color:white;
-	width:100%;
-	height:15%;
-	border-bottom:solid #e7e7e7 1px;
+#blocexpression {
+	background-color: white;
+	width: 100%;
+	height: 15%;
+	border-bottom: solid #e7e7e7 1px;
 }
 
-.publicationcontainer
-{
-	background-color:white;
-	width:100%;
-	height:auto;
-	border-bottom:solid #e7e7e7 1px;
+.publicationcontainer {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	border-bottom: solid #e7e7e7 1px;
 }
 
-table, td
-{
-	width:100%;
-	height:auto;
-	vertical-align:top;
+table,
+td {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
 }
+
 
 /* PHOTO DE PROFIL */
-.pptl
-{
-	width:100%;
-	min-width:36px;
-	max-width:50px;
-    margin:7px;
+
+.pptl {
+	width: 100%;
+	min-width: 36px;
+	max-width: 50px;
+	margin: 7px;
 	/* display:inline-block; */
-	float:left;
+	float: left;
 }
 
-.colonne1
-{
-	width:8%;
-	max-width:60px;
-	height:auto;
+.colonne1 {
+	width: 8%;
+	max-width: 60px;
+	height: auto;
 }
 
-.aligne3
-{	
-	display:flex;
-	text-align:left;
-	align-items:top;
+.aligne3 {
+	display: flex;
+	text-align: left;
+	align-items: top;
 }
+
 
 /* BOX DE PUBLICATION */
-#exprimezvous
-{
-	resize:none;
-    border:none;
-    width:85%;
-    height:85%;
-    margin-top:7px;
-	font-family:SofiaProLight;
+
+#exprimezvous {
+	resize: none;
+	border: none;
+	width: 85%;
+	height: 85%;
+	margin-top: 7px;
+	font-family: SofiaProLight;
 }
 
-#exprimezvous:focus
-{
+#exprimezvous:focus {
 	/* retire les border lors de la
 	selection de la boxe*/
-	outline:none;
+	outline: none;
 }
 
-#exprimezvous::-webkit-inut-placeholder
-{
-	font-size:small;
+#exprimezvous::-webkit-inut-placeholder {
+	font-size: small;
 }
+
 
 /* OUTILS DE PUBLICATON */
-.publier
-{
-	background-color:white;
-	width:100%;
-	height:auto;
-	margin-bottom:15px;
+
+.publier {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
 }
 
-.contentpublier
-{
-	display:block;
-	width:79%;
-	height:40;
-	margin-left:auto;
-	margin-right:auto;
+.contentpublier {
+	display: block;
+	width: 79%;
+	height: 40;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 2%;
 }
 
-#outilspublication1
-{
-	cursor:pointer;
-	height:50%;
-	margin-top:2%;
+#outilspublication1 {
+	cursor: pointer;
+	height: 50%;
+	margin-top: 2%;
 }
 
-.outilspublication2
-{
-	cursor:pointer;
-	height:50%;
-	margin-top:2%;	
-	margin-left:7;
+.outilspublication2 {
+	cursor: pointer;
+	height: 50%;
+	margin-top: 2%;
+	margin-left: 7;
 }
+
 
 /* BOUTON BLUEBIRDER */
-.bluebirder
-{
-	cursor:pointer;
-	background-color:#1373cf;
-    border-radius:6px;
-	border:none;
-    width:100;
-    height:80%;
-    min-height:30px;
-    float:right;
-    margin-top:1%;
-	color:white;
-	text-align:left;
-	font-size:14;
-	padding-left:1%;
+
+.bluebirder {
+	cursor: pointer;
+	background-color: #1373cf;
+	border-radius: 6px;
+	border: none;
+	width: 100;
+	height: 80%;
+	min-height: 30px;
+	float: right;
+	margin-top: 1%;
+	color: white;
+	text-align: left;
+	font-size: 14;
+	padding-left: 1%;
 	/* plume bluebird */
-	background-image:url(images/publication_petit.png);
-	background-repeat:no-repeat;
-	background-position:top right;
+	background-image: url(images/publication_petit.png);
+	background-repeat: no-repeat;
+	background-position: top right;
 }
 
-#bluebirder:focus
-{
-	outline:none;
+#bluebirder:focus {
+	outline: none;
 }
+
 
 /* TEXTE PUBLICATION */
-.nompublication
-{
-	margin-left:2%;
-	margin-top:1%;
-	font-size:16;
+
+.nompublication {
+	margin-left: 2%;
+	margin-top: 1%;
+	font-size: 16;
 }
 
-.heurepublication
-{
-	margin-left:2%;
-	font-size:11;
-	color:#888888;
+.heurepublication {
+	margin-left: 2%;
+	font-size: 11;
+	color: #888888;
 }
 
-.textepublication
-{
-	margin-left:2%;
-	margin-top:10;
-	font-size:20;
+.textepublication {
+	margin-left: 2%;
+	margin-top: 10;
+	font-size: 20;
 }
 
-.blocinteractions
-{
-	display:block;
-    width:79%;
-    height:22;
-    margin-left:auto;
-    margin-right:auto;
+.blocinteractions {
+	display: block;
+	width: 79%;
+	height: 22;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.nbpiou, .nbcomment, .nbvues
-{
-	display:inline;
-	font-size:12;
-	color:#888888;
-	padding-top:6px;
+.nbpiou,
+.nbcomment,
+.nbvues {
+	display: inline;
+	font-size: 12;
+	color: #888888;
+	padding-top: 6px;
 }
 
-.nbpiou
-{
-	float:left;
+.nbpiou {
+	float: left;
 }
 
-.nbcomment
-{
-	float:left;
-	padding-left:5%;
+.nbcomment {
+	float: left;
+	padding-left: 5%;
 }
 
-.nbvues
-{
-	float:right;
+.nbvues {
+	float: right;
 }
 
-.texteoutilspublication
-{
-	cursor:pointer;
-	background-color:white;
-    border-radius:6px;
-	border:none;
-    width:auto;
-    height:80%;
-    min-height:30px;
-    float:left;
-    margin-top:1%;
-	color:#1373cf;
-	text-align:right;
-	font-size:14;
-	padding-left:25;
+.texteoutilspublication {
+	cursor: pointer;
+	background-color: white;
+	border-radius: 6px;
+	border: none;
+	width: auto;
+	height: 80%;
+	min-height: 30px;
+	float: left;
+	margin-top: 1%;
+	color: #1373cf;
+	text-align: right;
+	font-size: 14;
+	padding-left: 25;
 	/* plume bluebird */
 	background-size: 20px;
-	background-repeat:no-repeat;
-	background-position:left;
+	background-repeat: no-repeat;
+	background-position: left;
 }
 
-.texteoutilspublication:focus
-{
-	outline:none;
+.texteoutilspublication:focus {
+	outline: none;
 }
 
-.boutonpiou
-{
-	background-image:url(images/piou_petit.png);
+.boutonpiou {
+	background-image: url(images/piou_petit.png);
 }
 
-.boutonpartager
-{
-	background-image:url(images/partager.png);
-	margin-left:5%;
+.boutonpartager {
+	background-image: url(images/partager.png);
+	margin-left: 5%;
 }
 
-.videotimeline
-{
-	display:block;
-	width:585;
-	height:341;
-	max-width:97%;
-	padding-top:2%;
-	padding-bottom:2%;
-	margin-left:2%;
-	margin-right:auto;
+.videotimeline {
+	display: block;
+	width: 585;
+	height: 341;
+	max-width: 97%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-left: 2%;
+	margin-right: auto;
 }
+
 
 /* SideBar Amis et groupes gauche */
 
-#sidebargauche
-{
-	width:25%;
+#sidebargauche {
+	width: 25%;
 	/* position:absolute; à supprimer, modif CH 15h49 */
-	left:0px;
+	left: 0px;
 	/* overflow:auto; */
 }
 
-.groupeBox
-{
-	border-radius:10px;
-	margin:0px 5px 10px 5px;
-	background:white;
+.groupeBox {
+	border-radius: 10px;
+	margin: 0px 5px 10px 5px;
+	background: white;
 	box-shadow: 0px 0px 5px #afb3b6;
-}	
+}
+
 
 /* rubrique Amis */
 
-.rubrique
-{
-	background-color:#E6E6E1;
-	font-size:small;
-	padding:3px;
-	border-radius:10px 10px 0px 0px;
+.rubrique {
+	background-color: #E6E6E1;
+	font-size: small;
+	padding: 3px;
+	border-radius: 10px 10px 0px 0px;
 }
 
-.rubrique img
-{
-	margin-left:5px;
-	margin-right:5px;
+.rubrique img {
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
-.flechebleu
-{
-	height:12px;
-	width:12px;
-	cursor:pointer;
+.flechebleu {
+	height: 12px;
+	width: 12px;
+	cursor: pointer;
 }
 
-.listeItems
-{
-	display:flex;
-	margin-left:10%;
-	font-size:medium;
-	text-align:left;
-	align-items:center;
+.listeItems {
+	display: flex;
+	margin-left: 10%;
+	font-size: medium;
+	text-align: left;
+	align-items: center;
 }
 
-.listeItems img
-{
-	margin:5px;
-	border-radius:5px;
+.listeItems img {
+	margin: 5px;
+	border-radius: 5px;
 }
 
-.iconeRubrique
-{
-	height:15px;
-	width:17px;
+.iconeRubrique {
+	height: 15px;
+	width: 17px;
 }
 
-.imageRubrique
-{
-	height:25px;
-	width:25px;
+.imageRubrique {
+	height: 25px;
+	width: 25px;
 }
 
-#iconeAbos
-{
-	height:17px;
-	width:17px;
+#iconeAbos {
+	height: 17px;
+	width: 17px;
 }
 
-#textedroit
-{
-	color:#888888;
-	text-align:right;
+#textedroit {
+	color: #888888;
+	text-align: right;
 }
 
-.pointbleu
-{
-	height:10px;
-	width:10px;
+.pointbleu {
+	height: 10px;
+	width: 10px;
 }
+
 
 /* CSS Page de profil (début) */
 
-#ProfilTout
-{
-	display:flex;
-	justify-content:space-between;
-	margin-top:5px;
+#ProfilTout {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
 }
+
 
 /* #profil { */
-	/* width:75%; */
-	/* height:auto; */
-	/* display:block; */
-	/* margin-left:25%; */
-	/* margin-right:5%; */
+
+
+/* width:75%; */
+
+
+/* height:auto; */
+
+
+/* display:block; */
+
+
+/* margin-left:25%; */
+
+
+/* margin-right:5%; */
+
+
 /* } */
 
-#bloccouverture
-{
-	width:100%;
-	height:250px; /* modif CH 15h04 */
-	background-image:url("images/couverture.jpg");
-	background-size:cover; /* modif CH 15h04 */
+#bloccouverture {
+	width: 100%;
+	height: 250px;
+	/* modif CH 15h04 */
+	background-image: url("images/couverture.jpg");
+	background-size: cover;
+	/* modif CH 15h04 */
 }
 
-#blocidentite
-{
-	display:block;
-	width:50%;
-	margin-left:auto;
-	margin-right:auto;
+#blocidentite {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#photoprofil
-{
-	height:100px;
-	width:100px;
-	margin-top:140px; /* modif CH 15h09 */
-	border-radius:20px; /* modif CH 15h09 */
-	box-shadow: 2px 2px 3px #444444; /* modif CH 15h12 */
+#photoprofil {
+	height: 100px;
+	width: 100px;
+	margin-top: 140px;
+	/* modif CH 15h09 */
+	border-radius: 20px;
+	/* modif CH 15h09 */
+	box-shadow: 2px 2px 3px #444444;
+	/* modif CH 15h12 */
 }
 
-#nomprofil
-{
-	display:inline-block;
-    color:white;
-    padding-left:10px;
-    font-size:xx-large;
+#nomprofil {
+	display: inline-block;
+	color: white;
+	padding-left: 10px;
+	font-size: xx-large;
 }
 
-#nom, #prenom
-{
-	display:inline-block;
+#nom,
+#prenom {
+	display: inline-block;
 	font-weight: bold;
-	text-shadow: 2px 2px 3px #444444; /* modif CH 15h12 */
+	text-shadow: 2px 2px 3px #444444;
+	/* modif CH 15h12 */
 }
 
-#onglets
-{
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	background-color:#E6E6E1;
-	width:100%;
-	height:30px; /* modif CH 15h15 */
+#onglets {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #E6E6E1;
+	width: 100%;
+	height: 30px;
+	/* modif CH 15h15 */
 	/* border-bottom-right-radius:8px; */
 	/* border-bottom-left-radius:8px; */
 }
 
-#bloconglets
-{
-	display:flex;
-	width:50%;
-	height:100%;
-	margin-left:auto;
-	margin-right:auto;
-	justify-content:space-around; /* modif CH 16h18 */
+#bloconglets {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-around;
+	/* modif CH 16h18 */
 }
 
-#bloconglets h1 /* modif CH 15h18 */
+#bloconglets h1
+/* modif CH 15h18 */
+
 {
-	font-size:medium; /* modif CH 15h18 */
-	font-weight:550; /* modif CH 15h18 */
+	font-size: medium;
+	/* modif CH 15h18 */
+	font-weight: 550;
+	/* modif CH 15h18 */
 }
 
-.lienongletprofil
-{
-	margin-top:auto;
-	margin-bottom:auto;
+.lienongletprofil {
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-.ongletprofil
-{
-	color:#1373cf;
-	display:inline-block;
-	font-size:large;
+.ongletprofil {
+	color: #1373cf;
+	display: inline-block;
+	font-size: large;
 }
+
 
 /* .ongletprofil:hover { */
-	/* text-decoration:underline; */
-	/* cursor:pointer; */
+
+
+/* text-decoration:underline; */
+
+
+/* cursor:pointer; */
+
+
 /* } modif CH 16h16 */
+
 
 /* .ongletprofil:active {
 	text-decoration:underline;
 } modif CH 16h16 */
 
-#pageProfil
-{
-	width:75%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:1px;
+#pageProfil {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1px;
 }
 
-#mur
-{
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	width:100%;
-	height:auto;
-	/* margin-top:20px; à supprimer, modif CH 15h45 */ 
-	border-radius:10px;
+#mur {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: auto;
+	/* margin-top:20px; à supprimer, modif CH 15h45 */
+	border-radius: 10px;
 }
 
-#infoperso
-{
-	display:inline-block;
-	width:32%;
-	height:200px;
-	border-radius:8px;
-	background-color:white;
+#infoperso {
+	display: inline-block;
+	width: 32%;
+	height: 200px;
+	border-radius: 8px;
+	background-color: white;
 	box-shadow: 0px 0px 2px #afb3b6;
 }
 
-#murtimeline
-{
-	display:inline-block;
-    width:65%;
-    height:200px;
-    margin-right:10px;
-    margin-left:5px;
-    float:left;
-    border-radius:8px;
-    background-color:white;
+#murtimeline {
+	display: inline-block;
+	width: 65%;
+	height: 200px;
+	margin-right: 10px;
+	margin-left: 5px;
+	float: left;
+	border-radius: 8px;
+	background-color: white;
 	box-shadow: 0px 0px 2px #afb3b6;
 }
 
-.infoPersoCadre
-{
-	margin:5px;
+.infoPersoCadre {
+	margin: 5px;
 }
 
-.infoPersoTitre
-{
-	font-size:small;
-	font-weight:500;
-	color:#888888;
-	margin-right:5px;
-	float:left;
+.infoPersoTitre {
+	font-size: small;
+	font-weight: 500;
+	color: #888888;
+	margin-right: 5px;
+	float: left;
 }
 
-.infoPersoDescription
-{
-	font-size:small;
-	font-weight:medium;
-	color:#444444;
+.infoPersoDescription {
+	font-size: small;
+	font-weight: medium;
+	color: #444444;
 }
 
-.infoPersoCouple
-{
-	font-size:small;
-	font-weight:medium;
-	color:#444444;
-	margin-right:5px;
-	float:left;
+.infoPersoCouple {
+	font-size: small;
+	font-weight: medium;
+	color: #444444;
+	margin-right: 5px;
+	float: left;
 }
 
-.InfoPersoMiniature img
-{
-	height:30px;
-	width:30px;
+.InfoPersoMiniature img {
+	height: 30px;
+	width: 30px;
 }
+
 
 /* CSS Page de profil (fin) */
 
+
 /* CSS Page messages (début) */
 
-.chat .message
-{
-	width:100%;
-	height:600px;
-	padding:10px;
-	overflow-y:scroll;
+.chat .message {
+	width: 100%;
+	height: 600px;
+	padding: 10px;
+	overflow-y: scroll;
 }
 
-.chat .entree
-{
-	width:100%;
-	height:100px;
-	padding:10px;
-	margin-top:5px;
+.chat .entree {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	margin-top: 5px;
 }
 
-.pseudo
-{
-	text-decoration:none;
+.pseudo {
+	text-decoration: none;
 }
 
-.chat
-{
-	border:2px solid #1373cf;
-	border-radius:10px;
+.chat {
+	border: 2px solid #1373cf;
+	border-radius: 10px;
 }
+
 
 /* CSS Page messages (fin) */

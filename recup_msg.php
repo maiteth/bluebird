@@ -26,5 +26,3 @@ foreach($messages as $message)
 	
 	<?php
 }
-
-?>

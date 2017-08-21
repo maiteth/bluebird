@@ -1,65 +1,214 @@
 /* GENERAL */
-* {	font-family:"Sofia Pro Light";margin:0px; padding:0px; }
-body { background-color:#1373cf; overflow:hidden; width:100%; height: 100%; }
-h1 {color:white; display:block; margin-right:auto; margin-left:auto;
-	margin-top:15px; text-align:center; }
-html { height: 100%; }
-p {	color:white;	}
+
+* {
+	font-family: "Sofia Pro Light";
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #1373cf;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	color: white;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	text-align: center;
+}
+
+html {
+	height: 100%;
+}
+
+p {
+	color: white;
+}
+
 
 /* HEADER */
+
+
 /*header img {	height:10%;	width:100%;}*/
-.nuagehaut {	z-index: 1000;width:100%;	}
-.Move_cloud_top {position:absolute;top:0; width: 100%; 
-	animation: anim_top 50s infinite linear normal;}
+
+.nuagehaut {
+	z-index: 1000;
+	width: 100%;
+}
+
+.Move_cloud_top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	animation: anim_top 50s infinite linear normal;
+}
+
 @keyframes anim_top {
-	from { left:0;}
-	25%	{ left:25%; }
-	50% { left:50%; }
-	75% { left:75%; }
-	to { left:100%;}	}
+	from {
+		left: 0;
+	}
+	25% {
+		left: 25%;
+	}
+	50% {
+		left: 50%;
+	}
+	75% {
+		left: 75%;
+	}
+	to {
+		left: 100%;
+	}
+}
 
 
 /* CORPS */
-#ajaxMail {color:#b71f1f; border-radius:3px; margin-top:5px;
-	display:none;margin-right:auto; margin-left:auto; padding:10px;
-	padding-left:15px; width:190px;}
-.align a { margin: 	auto; }
-.align { display: flex; }
-.align div {width: 	50%;}
-.align div:nth-child(1){ display:flex; flex-direction:column; 
-	justify-content: center;margin-right: 10px; }
-.align div:nth-child(2){ margin-left: 5px; }
-#bluebird { z-index:1000;width:100%; }
-.center {justify-content: center;}
-#connexion {background-color:#00a651; border-radius:3px; color:white;
-	margin-right:10%;margin-top:10px; padding:5px;
-	font-family:"Sofia Pro Light"; }
-.erreur { color:#b71f1f; display: none; border-radius:3px; 
-	margin-right:auto; margin-left:auto; padding:10px;
-	padding-left:15px; width:190px; }
-#forcemdp {	
-	display:none; border-radius:3px; margin-top:5px;
-	margin-right:auto; margin-left:auto; padding:10px;
-	padding-left:15px; width:175px;	}
-.hide{color:#b71f1f; border-radius:3px; margin-top:5px;
-	margin-right:auto; margin-left:auto; padding:10px}
-#identite {  margin-right:auto; margin-left:auto;margin-top:10px;
-	width:25%; }
-#imglogin { display:block; margin-right:auto; margin-left:auto;
-	margin-top:20px;width:35%;}
-.inscription:link {	color:white;
-	display:block;	font-family:"Sofia Pro Light";
-	font-size:12px; margin-top:3px; text-align:left; }
-.inscription:hover { color:white; text-decoration:underline; }
-.inscription:visited { color:white; text-decoration:underline;  }
-.login {border-radius:3px; display:block;margin: 10px 0px;
-	margin-right:auto; margin-left:auto; padding:10px;
-	padding-left:15px; width:175px; }
+
+#ajaxMail {
+	color: #b71f1f;
+	border-radius: 3px;
+	margin-top: 5px;
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	padding-left: 15px;
+	width: 190px;
+}
+
+.align a {
+	margin: auto;
+}
+
+.align {
+	display: flex;
+}
+
+.align div {
+	width: 50%;
+}
+
+.align div:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.align div:nth-child(2) {
+	margin-left: 5px;
+}
+
+#bluebird {
+	z-index: 1000;
+	width: 100%;
+}
+
+.center {
+	justify-content: center;
+}
+
+#connexion {
+	background-color: #00a651;
+	border-radius: 3px;
+	color: white;
+	margin-right: 10%;
+	margin-top: 10px;
+	padding: 5px;
+	font-family: "Sofia Pro Light";
+}
+
+.erreur {
+	color: #b71f1f;
+	display: none;
+	border-radius: 3px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	padding-left: 15px;
+	width: 190px;
+}
+
+#forcemdp {
+	display: none;
+	border-radius: 3px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	padding-left: 15px;
+	width: 175px;
+}
+
+.hide {
+	color: #b71f1f;
+	border-radius: 3px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px
+}
+
+#identite {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	width: 25%;
+}
+
+#imglogin {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	width: 35%;
+}
+
+.inscription:link {
+	color: white;
+	display: block;
+	font-family: "Sofia Pro Light";
+	font-size: 12px;
+	margin-top: 3px;
+	text-align: left;
+}
+
+.inscription:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.inscription:visited {
+	color: white;
+	text-decoration: underline;
+}
+
+.login {
+	border-radius: 3px;
+	display: block;
+	margin: 10px 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	padding-left: 15px;
+	width: 175px;
+}
+
+
 /*#mdpoublie {
 	float:right;
 	margin-right:10px;} */
-#tree {margin-bottom: 0px;}
-#tree img{
+
+#tree {
+	margin-bottom: 0px;
+}
+
+#tree img {
 	min-height: 50px;
 	position: absolute;
 	width: 550px;
@@ -67,67 +216,185 @@ p {	color:white;	}
 	z-index: -10;
 }
 
+
 /*	Animation nuages	*/
 
+.nuagegauche {
+	left: 0;
+	position: absolute;
+	width: 150px;
+}
 
-.nuagegauche {  left: 0; position:absolute; width:150px; }
-.nuagedroite { position:absolute; right:0px;width:150px; }
+.nuagedroite {
+	position: absolute;
+	right: 0px;
+	width: 150px;
+}
 
-.Move_cloud { 
-	bottom:50%;left: 0;
-	position:absolute; z-index: -100;
+.Move_cloud {
+	bottom: 50%;
+	left: 0;
+	position: absolute;
+	z-index: -100;
 	animation: anim1 25s infinite linear normal;
-	width:150px; z-index: -100;}
+	width: 150px;
+	z-index: -100;
+}
+
 @keyframes anim1 {
-	from { left:0px;top:200px;}
-	25%	{ left:25%; top:210px;}
-	50% { left:50%; top:205px;}
-	75% { left:75%; top:190px; }
-	to {  left:100%;top:170px;}	}
-.Move_cloud1 { animation: anim2 40s infinite linear normal;
-	right: 0; position:absolute;width:150px; z-index: -100;z-index: -100; }
+	from {
+		left: 0px;
+		top: 200px;
+	}
+	25% {
+		left: 25%;
+		top: 210px;
+	}
+	50% {
+		left: 50%;
+		top: 205px;
+	}
+	75% {
+		left: 75%;
+		top: 190px;
+	}
+	to {
+		left: 100%;
+		top: 170px;
+	}
+}
+
+.Move_cloud1 {
+	animation: anim2 40s infinite linear normal;
+	right: 0;
+	position: absolute;
+	width: 150px;
+	z-index: -100;
+	z-index: -100;
+}
+
 @keyframes anim2 {
-	from { right:0;bottom:50px;}
-	25%	{ right:25%; bottom:75px;}
-	50% { right:50%; bottom:110px;}
-	75% { right:75%; bottom:125px; }
-	to {  right:100%;bottom:140px;}	}
+	from {
+		right: 0;
+		bottom: 50px;
+	}
+	25% {
+		right: 25%;
+		bottom: 75px;
+	}
+	50% {
+		right: 50%;
+		bottom: 110px;
+	}
+	75% {
+		right: 75%;
+		bottom: 125px;
+	}
+	to {
+		right: 100%;
+		bottom: 140px;
+	}
+}
 
-.Move_cloud2 { animation: anim3 30s infinite linear normal;
-	position:absolute;right: 0;width:150px; z-index: -100;z-index: -100; }	
+.Move_cloud2 {
+	animation: anim3 30s infinite linear normal;
+	position: absolute;
+	right: 0;
+	width: 150px;
+	z-index: -100;
+	z-index: -100;
+}
+
 @keyframes anim3 {
-	from { right:0;top:50px;}
-	25%	{ right:25%; top:75px;}
-	50% { right:50%; top:110px;}
-	75% { right:75%; top:125px; }
-	to {  right:100%;top:140px;}	}
+	from {
+		right: 0;
+		top: 50px;
+	}
+	25% {
+		right: 25%;
+		top: 75px;
+	}
+	50% {
+		right: 50%;
+		top: 110px;
+	}
+	75% {
+		right: 75%;
+		top: 125px;
+	}
+	to {
+		right: 100%;
+		top: 140px;
+	}
+}
 
-.Move_sun { animation: anim4 35s infinite linear normal;
-	left: 0;position:absolute;width:150px; z-index: -100;z-index: -100;  }	
+.Move_sun {
+	animation: anim4 35s infinite linear normal;
+	left: 0;
+	position: absolute;
+	width: 150px;
+	z-index: -100;
+	z-index: -100;
+}
+
 @keyframes anim4 {
-	from { left:0;top:90px;}
-	25%	{ left:25%; top:75px;}
-	50% { left:50%; top:50px;}
-	75% { left:75%; top:75px; }
-	to {  left:100%;top:90px;}	}
+	from {
+		left: 0;
+		top: 90px;
+	}
+	25% {
+		left: 25%;
+		top: 75px;
+	}
+	50% {
+		left: 50%;
+		top: 50px;
+	}
+	75% {
+		left: 75%;
+		top: 75px;
+	}
+	to {
+		left: 100%;
+		top: 90px;
+	}
+}
 
-.bird { 
-	background:url("images/bird.png") no-repeat; display:block;
-	height:47px; width:47px;position: absolute;z-index: 99px;
-	animation: animBird 1s 0s steps(2) infinite,
-	move-bird 10s infinite linear normal ; }
+.bird {
+	background: url("images/bird.png") no-repeat;
+	display: block;
+	height: 47px;
+	width: 47px;
+	position: absolute;
+	z-index: 99px;
+	animation: animBird 1s 0s steps(2) infinite, move-bird 10s infinite linear normal;
+}
 
 @keyframes animBird {
-from {background-position:-290.7px -285.7px; }
-to { background-position:-380px -285.7px; } 
+	from {
+		background-position: -290.7px -285.7px;
+	}
+	to {
+		background-position: -380px -285.7px;
+	}
 }
 
 @keyframes move-bird {
-    0%   { left: 0px }
-    50%  { left: 400px }
-    100% { left: 800px } }
+	0% {
+		left: 0px
+	}
+	50% {
+		left: 400px
+	}
+	100% {
+		left: 800px
+	}
+}
+
 
 /* INPUTS */
+
+
 /*#champs {
 	width:4rem;
 	display:block;
@@ -137,13 +404,21 @@ to { background-position:-380px -285.7px; }
 
 
 /* FOOTER */
+
 footer {
 	position: absolute;
-	width:100%;
-	height:10%;
-	bottom:0px;
-	}
+	width: 100%;
+	height: 10%;
+	bottom: 0px;
+}
 
-.nuagebas { width:70%; }
+.nuagebas {
+	width: 70%;
+}
 
-.pieddepage {position: absolute; right:0;z-index: 10000;width:30%; }
+.pieddepage {
+	position: absolute;
+	right: 0;
+	z-index: 10000;
+	width: 30%;
+}

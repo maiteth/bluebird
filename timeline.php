@@ -213,7 +213,7 @@
 		<div id=timeline>
 			<!-- bloc pour statut et boutons media -->
 			<div class=blocpublication>
-				<!-- bloc pour statut uniquement -->
+				<!-- statut uniquement -->
 				<form id=blocexpression method=post action=publier.php>
 					<img alt=pp-isidore-monnet class=pptl src="images/pp-isidore-monnet.png">
 					<p>
